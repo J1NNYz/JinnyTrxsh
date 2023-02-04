@@ -1,4 +1,4 @@
-local InputService = game:GetService('UserInputService');
+local InputService = game:GetService('UserInputService'); -- Change Size 2408
 local TextService = game:GetService('TextService');
 local TweenService = game:GetService('TweenService');
 local CoreGui = game:GetService('CoreGui');
@@ -26,11 +26,11 @@ local Library = {
 
     HudRegistry = {};
 
-    FontColor = Color3.fromRGB(255, 255, 255); -- เอ๋อจัด
-    MainColor = Color3.fromRGB(28, 28, 28); -- เอ๋อจัด
-    BackgroundColor = Color3.fromRGB(20, 20, 20); -- เอ๋อจัด
-    AccentColor = Color3.fromRGB(255, 0, 0); -- เอ๋อจัด
-    OutlineColor = Color3.fromRGB(50, 50, 50); -- เอ๋อจัด
+    FontColor = Color3.fromRGB(255, 255, 255); -- ไอกาก
+    MainColor = Color3.fromRGB(25, 21, 24);
+    BackgroundColor = Color3.fromRGB(13, 11, 13);
+    AccentColor = Color3.fromRGB(0, 255, 209);
+    OutlineColor = Color3.fromRGB(47, 46, 49);
 
     Black = Color3.new(0, 0, 0);
 
@@ -2155,7 +2155,7 @@ do
 
     local WatermarkOuter = Library:Create('Frame', {
         BorderColor3 = Color3.new(0, 0, 0);
-        Position = UDim2.new(0, 100, 0, -25);
+        Position = UDim2.new(0, 260, 0, -25);
         Size = UDim2.new(0, 213, 0, 20);
         ZIndex = 200;
         Visible = false;
@@ -2404,7 +2404,7 @@ function Library:CreateWindow(...)
     if type(Config.Title) ~= 'string' then Config.Title = 'No title' end
     
     if typeof(Config.Position) ~= 'UDim2' then Config.Position = UDim2.fromOffset(175, 40) end
-    if typeof(Config.Size) ~= 'UDim2' then Config.Size = UDim2.fromOffset(550, 590) end -- Change Size
+    if typeof(Config.Size) ~= 'UDim2' then Config.Size = UDim2.fromOffset(550, 700) end -- Change Size
 
     if Config.Center then
         Config.AnchorPoint = Vector2.new(0.5, 0.5)
